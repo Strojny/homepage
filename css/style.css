@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.js-body {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.fontStyle {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.pageWidth {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.darkMode {
+    background-color: rgba(18, 23, 26);
+    color: rgb(228, 227, 227);
+}

@@ -1,0 +1,39 @@
+.nav__listItem {
+    margin: 7px 0;
+    list-style-type: none;
+}
+
+.nav__list {
+    padding-left: 0;
+}
+
+.nav__link {
+    color: rgb(13, 82, 117);
+    text-decoration: none;
+}
+
+.nav__link:visited {
+    color: rgb(70, 82, 68);
+}
+
+.nav__link:focus {
+    outline: 2px solid black;
+    border-radius: 1px;
+}
+
+.nav__link:hover {
+    color: red;
+    outline: none;
+}
+
+.nav__link:active {
+    color: blue;
+}
+
+.nav__linkDarkMode {
+    color: rgb(149, 186, 204);
+}
+
+.nav__linkDarkMode:visited {
+    color: rgb(124, 158, 121);
+}

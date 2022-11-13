@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Strojny - About me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/topBox.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body class="js-body">
+    <header class="header">
+        <h1 class="header__title">Sebastian Strojny - strona o mnie</h1>
+        <div class="topBox">
+            <img class="topBox__image" src="https://i.ibb.co/JprhTT3/S-Strojny.jpg" alt="Zdjęcie profilowe">
+            <p>
+                <button class="topBox__button topBox__button--image js-photoSwitch"><span
+                        class="js-photoButtonText">Hide</span> photo</button>
+                <button class="topBox__button topBox__button--darkMode js-darkModeSwitch"><span
+                        class="js-darkModeButtonText">Dark</span>
+                    Mode</button>
+            </p>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__listItem">
+                    <a class="nav__link js-linkAboutMeDarkMode" href="#first-section">Kim jestem</a>
+                </li>
+                <li class="nav__listItem">
+                    <a class="nav__link js-linkPlanDarkMode" href="#second-section">Plan na ten rok</a> 
+                </li>
+                <li class="nav__listItem">
+                    <a class="nav__link js-linkHobbyDarkMode" href="#third-section">Zainteresowania</a>
+                </li>
+                <li class="nav__listItem">
+                    <a class="nav__link js-linkContactDarkMode" href="#fourth-section">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section" id="first-section">
+            <h2 class="section__header">Kim jestem:</h2>
+            <p class="section__paragraph">Mam na imie Sebastian. Mam 32 lata. Mieszkam w Krakowie. Od grudnia 2020
+                pracuję w firmie Yggdrasil jako Integration Support Engineer.</p>
+        </section>
+        <section class="section" id="second-section">
+            <h2 class="section__header">Plan na ten rok:</h2>
+            <p class="section__paragraph">Uczę się jezyka <i>JavaScript</i>. Do <em>połowy 2023 roku</em> zamierzam
+                zostać <strong>programistą!</strong></p>
+        </section>
+        <section class="section" id="third-section">
+            <h2 class="section__header">Zainteresowania:</h2>
+            <p class="section__paragraph">Interesuję sie <b>motoryzacją</b> i rozwojem osobistym.</p>
+        </section>
+        <section class="containerOverflow">
+            <table class="table">
+                <caption class="table__caption">Moje samochody marzeń:</caption>
+                <thead class="table__head">
+                    <tr class="table__row js-tableRowDarkMode">
+                        <th scope="col" class="table__header">Marka</th>
+                        <th scope="col" class="table__header">Model</th>
+                        <th scope="col" class="table__header">Zdjęcie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table__row js-tableRowDarkMode">
+                        <th scope="row" rowspan="2" class="table__header">Aston Martin</th>
+                        <td class="table__cell">DB9/DBS</td>
+                        <td class="table__cell">
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://ocdn.eu/pulscms-transforms/1/x5Xk9kpTURBXy8yMTRhZTE0Njk3MDc0OTQzMWRjZTlkYjI3ODliZGViMi5qcGeSlQMkAM0EAM0CP5MFzQMUzQG8gqEwBaExAA"
+                                title="Otwiera zdjęcie samochodu w nowej karcie"><img class="table__image"
+                                    src="https://ocdn.eu/pulscms-transforms/1/x5Xk9kpTURBXy8yMTRhZTE0Njk3MDc0OTQzMWRjZTlkYjI3ODliZGViMi5qcGeSlQMkAM0EAM0CP5MFzQMUzQG8gqEwBaExAA"
+                                    alt="Aston Martin DB9">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="table__row js-tableRowDarkMode">
+                        <td class="table__cell">V8 Vantage (1977)</td>
+                        <td class="table__cell">
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://www.wykop.pl/cdn/c3201142/comment_DZMhR0aCzP6wH6wwV22gAprMSQIz183F.jpg"
+                                title="Otwiera zdjęcie samochodu w nowej karcie">
+                                <img class="table__image"
+                                    src="https://www.wykop.pl/cdn/c3201142/comment_DZMhR0aCzP6wH6wwV22gAprMSQIz183F.jpg"
+                                    alt="Aston Martin V8 Vantage (1977)">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="table__row js-tableRowDarkMode">
+                        <th scope="row" class="table__header">Nissan</th>
+                        <td class="table__cell">GTR</td>
+                        <td class="table__cell">
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://automotyw.com/wp-content/uploads/2022/01/nissan_gt-r_50th_anniversary_951-1024x805.jpeg"
+                                title="Otwiera zdjęcie samochodu w nowej karcie">
+                                <img class="table__image"
+                                    src="https://automotyw.com/wp-content/uploads/2022/01/nissan_gt-r_50th_anniversary_951-1024x805.jpeg"
+                                    alt="Nissan GTR">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="table__row js-tableRowDarkMode">
+                        <th scope="row" class="table__header">Ford</th>
+                        <td class="table__cell">Mustang Shelby GT500 "Eleanor"</td>
+                        <td class="table__cell">
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://www.supercars.net/blog/wp-content/uploads/2021/01/eleanor_1.jpg"
+                                title="Otwiera zdjęcie samochodu w nowej karcie">
+                                <img class="table__image"
+                                    src="https://www.supercars.net/blog/wp-content/uploads/2021/01/eleanor_1.jpg"
+                                    alt="Ford Mustang Shelby GT500 'Eleanor'">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="table__row js-tableRowDarkMode">
+                        <th scope="row" rowspan="2" class="table__header">Ferrari</th>
+                        <td class="table__cell">328 GTB</td>
+                        <td class="table__cell">
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://images8.alphacoders.com/103/1038884.jpg"
+                                title="Otwiera zdjęcie samochodu w nowej karcie">
+                                <img class="table__image" src="https://images8.alphacoders.com/103/1038884.jpg"
+                                    alt="Ferrari 328 GTB">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="table__row js-tableRowDarkMode">
+                        <td class="table__cell">F355 Berlinetta</td>
+                        <td class="table__cell">
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://cdn3.focus.bg/autodata/i/ferrari/f355/f355-berlinetta/medium/492b75eb7081f4cb302cf23ba8458bd3.jpg"
+                                title="Otwiera zdjęcie samochodu w nowej karcie"><img class="table__image"
+                                    src="https://cdn3.focus.bg/autodata/i/ferrari/f355/f355-berlinetta/medium/492b75eb7081f4cb302cf23ba8458bd3.jpg"
+                                    alt="Ferrari F355 Berlinetta">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="table__row js-tableRowDarkMode">
+                        <th scope="row" class="table__header">Subaru</th>
+                        <td class="table__cell">Impreza WRX STI</td>
+                        <td class="table__cell">
+                            <a rel="noreferrer noopener" target="_blank"
+                                href="https://i.wpimg.pl/O/550x400/i.wp.pl/a/f/jpeg/25765/si21_550.jpeg"
+                                title="Otwiera zdjęcie samochodu w nowej karcie"><img class="table__image"
+                                    src="https://i.wpimg.pl/O/550x400/i.wp.pl/a/f/jpeg/25765/si21_550.jpeg"
+                                    alt="Subaru Impreza WRX STI">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__header" id="fourth-section">Kontakt:</h2>
+        <p class="footer__paragraph">Tel: 695-414-406<br>
+            E-mail: sebastian.strojny@gmail.com</p>
+    </footer>
+</body>
+
+</html>

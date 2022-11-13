@@ -1,0 +1,38 @@
+.table__image {
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table__caption {
+    font-weight: 700;
+    padding: 10px;
+}
+
+.table__header {
+    border: 1px solid rgba(167, 166, 166, 0.719);
+    padding: 10px;
+    text-align: center;
+}
+
+.table__cell {
+    border: 1px solid rgba(167, 166, 166, 0.719);
+    padding: 10px;
+    text-align: center;
+}
+
+.table__row:hover {
+    background-color: rgba(224, 225, 231, 0.87);
+}
+
+.table__rowDarkMode:hover {
+    color: rgba(18, 23, 26);
+}
+
+.containerOverflow {
+    overflow-x: auto;
+}
