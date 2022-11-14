@@ -29,7 +29,13 @@
     background-color: rgba(224, 225, 231, 0.87);
 }
 
-.table__rowDarkMode:hover {
+.table__DarkMode {
+    background-color: rgba(18, 23, 26);
+    color: rgb(228, 227, 227);
+}
+
+.table__DarkMode:hover {
+    background-color: rgba(224, 225, 231, 0.87);
     color: rgba(18, 23, 26);
 }
 
