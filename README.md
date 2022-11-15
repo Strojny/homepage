@@ -9,7 +9,7 @@ Just open the page and you can see two features inside - you will find two butto
 - 'Dark/Light mode' will change the colors on the website to dark, so it's easier to read after sunset, and also looks cool!
 
 Presentation:
-![Homepage presentation gif] (https://github.com/Strojny/homepage/blob/9a290073259ca47f51224ceeed446452343a14a6/videos/Homepage_gif.gif)
+![Homepage presentation gif](https://github.com/Strojny/homepage/blob/9a290073259ca47f51224ceeed446452343a14a6/videos/Homepage_gif.gif)
 
 ## Try it yourself :) 
 
