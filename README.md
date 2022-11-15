@@ -13,4 +13,4 @@ Presentation:
 
 ## Try it yourself :) 
 
-[Sebastian Strojny - Homepage] (https://strojny.github.io/homepage/)
+[Sebastian Strojny - Homepage](https://strojny.github.io/homepage/)
