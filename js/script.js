@@ -19,7 +19,7 @@ let linkAboutMeDarkMode = document.querySelector(".js-linkAboutMeDarkMode");
 let linkPlanDarkMode = document.querySelector(".js-linkPlanDarkMode");
 let linkHobbyDarkMode = document.querySelector(".js-linkHobbyDarkMode");
 let linkContactDarkMode = document.querySelector(".js-linkContactDarkMode");
-let tableDarkMode = document.querySelector(".js-tableDarkMode");
+let tableDarkMode = document.querySelectorAll(".js-tableDarkMode");
 
 button2.addEventListener("click", () => {
 
@@ -37,6 +37,8 @@ button2.addEventListener("click", () => {
     linkHobbyDarkMode.classList.toggle("nav__linkDarkMode:visited");
     linkContactDarkMode.classList.toggle("nav__linkDarkMode:visited");
 
-    tableDarkMode.classList.toggle("table__DarkMode");
+    tableDarkMode.forEach(tableRow => {
+        tableRow.classList.toggle("table__DarkMode");
+      });
 
 });
