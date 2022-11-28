@@ -12,33 +12,35 @@ button1.addEventListener("click", () => {
 });
 
 
-let button2 = document.querySelector(".js-darkModeSwitch");
-let body = document.querySelector(".js-body");
-let DarkModeButtonText = document.querySelector(".js-darkModeButtonText");
-let linkAboutMeDarkMode = document.querySelector(".js-linkAboutMeDarkMode");
-let linkPlanDarkMode = document.querySelector(".js-linkPlanDarkMode");
-let linkHobbyDarkMode = document.querySelector(".js-linkHobbyDarkMode");
-let linkContactDarkMode = document.querySelector(".js-linkContactDarkMode");
-let tableDarkMode = document.querySelectorAll(".js-tableDarkMode");
+{
+    const toggleBackground = () => {
 
-button2.addEventListener("click", () => {
+        const body = document.documentElement;
+        const tableDarkMode = document.querySelectorAll(".js-tableDarkMode");
+        const linkDarkMode = document.querySelectorAll(".js-linkDarkMode");
+        const DarkModeButtonText = document.querySelector(".js-darkModeButtonText");
 
-    body.classList.toggle("darkMode");
+        body.classList.toggle("darkMode");
 
-    DarkModeButtonText.innerText = body.classList.contains("darkMode") ? "Light" : "Dark";
+        tableDarkMode.forEach(tableRow => {
 
-    linkAboutMeDarkMode.classList.toggle("nav__linkDarkMode");
-    linkPlanDarkMode.classList.toggle("nav__linkDarkMode");
-    linkHobbyDarkMode.classList.toggle("nav__linkDarkMode");
-    linkContactDarkMode.classList.toggle("nav__linkDarkMode");
+            tableRow.classList.toggle("table__DarkMode");
+        });
 
-    linkAboutMeDarkMode.classList.toggle("nav__linkDarkMode:visited");
-    linkPlanDarkMode.classList.toggle("nav__linkDarkMode:visited");
-    linkHobbyDarkMode.classList.toggle("nav__linkDarkMode:visited");
-    linkContactDarkMode.classList.toggle("nav__linkDarkMode:visited");
+        linkDarkMode.forEach(nav__link => {
 
-    tableDarkMode.forEach(tableRow => {
-        tableRow.classList.toggle("table__DarkMode");
-      });
+            nav__link.classList.toggle('nav__linkDarkMode');
+        });
 
-});
+        DarkModeButtonText.innerText = body.classList.contains("darkMode") ? "Light" : "Dark";
+    };
+
+    const init = () => {
+        let button2 = document.querySelector(".js-darkModeSwitch");
+
+        button2.addEventListener("click", toggleBackground)
+    };
+
+    init();
+
+}
