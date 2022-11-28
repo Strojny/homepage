@@ -1,18 +1,17 @@
 
-let button1 = document.querySelector(".js-photoSwitch");
-let photo = document.querySelector(".topBox__image");
-let photoButtonText = document.querySelector(".js-photoButtonText");
-
-button1.addEventListener("click", () => {
-
-    photo.classList.toggle("js-photoHide");
-
-    photoButtonText.innerText = photo.classList.contains("js-photoHide") ? "Show" : "Hide";
-
-});
-
-
 {
+    let button1 = document.querySelector(".js-photoSwitch");
+    let photo = document.querySelector(".topBox__image");
+    let photoButtonText = document.querySelector(".js-photoButtonText");
+
+    button1.addEventListener("click", () => {
+
+        photo.classList.toggle("js-photoHide");
+
+        photoButtonText.innerText = photo.classList.contains("js-photoHide") ? "Show" : "Hide";
+
+    });
+
     const toggleBackground = () => {
 
         const body = document.documentElement;
@@ -42,5 +41,4 @@ button1.addEventListener("click", () => {
     };
 
     init();
-
 }
