@@ -17,7 +17,7 @@
         const body = document.documentElement;
         const tableDarkMode = document.querySelectorAll(".js-tableDarkMode");
         const linkDarkMode = document.querySelectorAll(".js-linkDarkMode");
-        const DarkModeButtonText = document.querySelector(".js-darkModeButtonText");
+        const darkModeButtonText = document.querySelector(".js-darkModeButtonText");
 
         body.classList.toggle("darkMode");
 
@@ -31,7 +31,7 @@
             nav__link.classList.toggle('nav__linkDarkMode');
         });
 
-        DarkModeButtonText.innerText = body.classList.contains("darkMode") ? "Light" : "Dark";
+        darkModeButtonText.innerText = body.classList.contains("darkMode") ? "Light" : "Dark";
     };
 
     const init = () => {
