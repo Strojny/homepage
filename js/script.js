@@ -1,19 +1,30 @@
-
 {
-    let button1 = document.querySelector(".js-photoSwitch");
-    let photo = document.querySelector(".topBox__image");
-    let photoButtonText = document.querySelector(".js-photoButtonText");
-
-    button1.addEventListener("click", () => {
+    const togglePhotoClass = () => {
+        const photo = document.querySelector(".topBox__image");
 
         photo.classList.toggle("js-photoHide");
+    }
+    
+    const togglePhotoButtonText = () => {
+        const photoButtonText = document.querySelector(".js-photoButtonText");
+        const photo = document.querySelector(".topBox__image");
 
         photoButtonText.innerText = photo.classList.contains("js-photoHide") ? "Show" : "Hide";
+    }
 
-    });
+    const togglePhotoAndButtonClasses = () => {
+
+        togglePhotoClass();
+        togglePhotoButtonText();
+    }
+
+    const photoHide = () => {
+        const button1 = document.querySelector(".js-photoSwitch");
+
+        button1.addEventListener("click", togglePhotoAndButtonClasses);
+    }
 
     const toggleBackground = () => {
-
         const body = document.documentElement;
         const tableDarkMode = document.querySelectorAll(".js-tableDarkMode");
         const linkDarkMode = document.querySelectorAll(".js-linkDarkMode");
@@ -35,9 +46,11 @@
     };
 
     const init = () => {
-        let button2 = document.querySelector(".js-darkModeSwitch");
+        const button2 = document.querySelector(".js-darkModeSwitch");
 
         button2.addEventListener("click", toggleBackground)
+
+        photoHide();
     };
 
     init();
